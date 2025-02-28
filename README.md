@@ -98,4 +98,7 @@ Please refer to the project documentation for contribution guidelines.
 
 ## License
 
-[Your License Here] - See LICENSE file for details.
+© 2025 Case Western Reserve University, SaPHaRI Lab - All rights reserved.
+
+This project is currently under active research development prior to publication.
+Following publication, this project will be released under the MIT License.
