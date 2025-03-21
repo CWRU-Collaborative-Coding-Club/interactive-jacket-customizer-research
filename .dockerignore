@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+build
+.git
+.github
+.gitignore
+README.md
+LICENSE
+PROJECTOVERVIEW.md
+DEVLOG.md
+/plans_for_each_week
+
