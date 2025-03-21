@@ -24,6 +24,11 @@ This file documents the daily development progress for the Interactive Jacket Cu
 
 **Hours Worked:** 5
 
+
+## Week 2: Divide into three teams & set each team lead
+Current Approach is close to an agile methodoloy with parallel development
+
+
 ---
 <!-- 
 ### Day 2 (2025-02-28)
