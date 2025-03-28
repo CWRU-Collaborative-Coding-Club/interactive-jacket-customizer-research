@@ -83,7 +83,7 @@ services:
       bash -c "pip install -r requirements.txt &&
               python app.py"
     ports:
-      - "5000:5000"
+      - "5001:5001"
     volumes:
       - ./server:/app
     environment:
@@ -137,7 +137,7 @@ def health_check():
     return jsonify({"status": "healthy"})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)
 EOF
     echo "✓ Server files created."
 fi
@@ -147,7 +147,7 @@ if [ ! -f ".env" ]; then
     echo "Creating .env file..."
     cat > .env << 'EOF'
 # React development settings
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_API_URL=http://localhost:5001
 # Add other environment variables as needed
 EOF
     echo "✓ .env file created."
@@ -205,7 +205,7 @@ docker-compose up -d
 echo "======================================================"
 echo "Environment setup complete!"
 echo "✓ Frontend: http://localhost:3000"
-echo "✓ Backend API: http://localhost:5000/api/health"
+echo "✓ Backend API: http://localhost:5001/api/health"
 echo "======================================================"
 echo "Use these commands to manage the environment:"
 echo "  - Start:   docker-compose up"

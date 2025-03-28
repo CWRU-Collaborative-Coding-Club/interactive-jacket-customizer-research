@@ -73,7 +73,7 @@ Our project is divided into two main parts:
    - Uses React, dnd-kit, and Zustand
 
 2. **Backend (Flask API) - Optional**
-   - Running on port 5000
+   - Running on port 5001
    - Handles data storage and retrieval
    - Uses Python with Flask
 

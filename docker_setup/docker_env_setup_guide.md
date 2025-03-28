@@ -90,7 +90,7 @@ services:
       bash -c "pip install -r requirements.txt &&
               python app.py"
     ports:
-      - "5000:5000"
+      - "5001:5001"
     volumes:
       - ./server:/app
     environment:
@@ -182,7 +182,7 @@ docker-compose up -d
 ## Step 6: Access the Application
 
 - **Frontend**: Open your browser and navigate to http://localhost:3000
-- **Backend API**: Accessible at http://localhost:5000/api/health
+- **Backend API**: Accessible at http://localhost:5001/api/health
 
 ## Step 7: Common Docker Commands
 
