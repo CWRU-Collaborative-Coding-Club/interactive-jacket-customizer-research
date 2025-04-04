@@ -56,23 +56,25 @@ npm start
 ```
 interactive-jacket-customizer-research/
 ├── public/
-│   ├── assets/               # Static assets (jacket images, etc.)
+│   ├── assets/                 # Static assets (jacket images, etc.)
 │   └── index.html
 ├── src/
-│   ├── components/           # React components
-│   │   ├── Canvas/           # Jacket canvas and related components
-│   │   ├── Controls/         # UI controls (color picker, sliders, etc.)
-│   │   ├── Items/            # Draggable items
-│   │   └── Layout/           # App layout components
-│   ├── store/                # Zustand store setup
-│   │   ├── historyStore.js   # Undo/redo functionality
-│   │   ├── itemsStore.js     # Item management
-│   │   └── userStore.js      # User/participant data
+│   ├── components/             # React components
+│   │   ├── Canvas/             # Jacket canvas and related components
+│   │   ├── Controls/           # UI controls (color picker, sliders, etc.)
+│   │   ├── Items/              # Draggable items
+│   │   ├── LeftComponent.tsx   # Left window with items
+|   |   ├── MiddleComponent.tsx # Main Canvas with Jacket
+|   |   └── RightComponent.tsx  # right window with Customization Panel
+│   ├── store/                  # Zustand store setup
+│   │   ├── historyStore.ts     # Undo/redo functionality
+│   │   ├── itemsStore.ts       # Item management
+│   │   └── userStore.ts        # User/participant data
 │   ├── utils/
-│   │   ├── database.js       # IndexedDB setup and operations
-│   │   └── tracking.js       # Interaction tracking utilities
-│   └── App.js                # Main application component
-├── server/                   # Optional Flask server (if needed)
+│   │   ├── database.ts         # IndexedDB setup and operations
+│   │   └── tracking.ts         # Interaction tracking utilities
+│   └── App.tsx                 # Main application component
+├── server/                     # Optional Flask server (if needed)
 │   ├── app.py
 │   └── requirements.txt
 └── README.md

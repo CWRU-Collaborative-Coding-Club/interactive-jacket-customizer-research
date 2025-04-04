@@ -1,16 +1,27 @@
-// src/App.tsx
+// App.tsx
 import React from 'react';
-import './App.css';
+import { LeftSidebar } from './components/LeftComponent';
+import { JacketCanvas } from './components/MiddleComponent';
+import { CustomizationPanel } from './components/RightComponent';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My React App</h1>
-        <p>This is a simple React application.</p>
+    <div>
+      <header>
+        <h1>Interactive Jacket Customizer - App.tsx</h1>
       </header>
+      <main>
+        <div style={{ display: 'flex' }}>
+          <div><LeftSidebar /></div>
+          <div><JacketCanvas /></div>
+          <div><CustomizationPanel /></div>
+        </div>
+      </main>
+      <footer>
+        <p>© 2025 Case Western Reserve University, SaPHaRI Lab(text in App.tsx)</p>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
