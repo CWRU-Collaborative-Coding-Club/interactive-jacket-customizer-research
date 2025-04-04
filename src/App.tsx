@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <div>
       <header>
-        <h1>Interactive Jacket Customizer</h1>
+        <h1>Interactive Jacket Customizer - App.tsx</h1>
       </header>
       <main>
         <div style={{ display: 'flex' }}>
