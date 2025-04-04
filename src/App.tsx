@@ -1,8 +1,8 @@
 // App.tsx
 import React from 'react';
-import { LeftSidebar } from './components/LeftSidebar';
-import { JacketCanvas } from './components/JacketCanvas';
-import { CustomizationPanel } from './components/CustomizationPanel';
+import { LeftSidebar } from './components/LeftComponent';
+import { JacketCanvas } from './components/MiddleComponent';
+import { CustomizationPanel } from './components/RightComponent';
 
 const App: React.FC = () => {
   return (
