@@ -65,13 +65,13 @@ interactive-jacket-customizer-research/
 │   │   ├── Items/            # Draggable items
 │   │   └── Layout/           # App layout components
 │   ├── store/                # Zustand store setup
-│   │   ├── historyStore.js   # Undo/redo functionality
-│   │   ├── itemsStore.js     # Item management
-│   │   └── userStore.js      # User/participant data
+│   │   ├── historyStore.ts   # Undo/redo functionality
+│   │   ├── itemsStore.ts     # Item management
+│   │   └── userStore.ts      # User/participant data
 │   ├── utils/
-│   │   ├── database.js       # IndexedDB setup and operations
-│   │   └── tracking.js       # Interaction tracking utilities
-│   └── App.js                # Main application component
+│   │   ├── database.ts       # IndexedDB setup and operations
+│   │   └── tracking.ts       # Interaction tracking utilities
+│   └── App.tsx                # Main application component
 ├── server/                   # Optional Flask server (if needed)
 │   ├── app.py
 │   └── requirements.txt
