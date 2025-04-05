@@ -1,7 +1,7 @@
-// src/components/JacketCanvas.tsx
+// src/components/MiddleComponent.tsx
 import React from 'react';
 
-export const JacketCanvas: React.FC = () => {
+export const MiddleComponent: React.FC = () => {
   return (
     <div>
       <div>
@@ -9,7 +9,7 @@ export const JacketCanvas: React.FC = () => {
         <button>Back View</button>
       </div>
       <div>
-        <p>Jacket visualization will appear here</p>
+        <p>Jacket visualization will appear here - MiddleComponent.tsx</p>
       </div>
     </div>
   );

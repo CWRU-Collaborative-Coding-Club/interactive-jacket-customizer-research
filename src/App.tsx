@@ -1,20 +1,21 @@
 // App.tsx
 import React from 'react';
-import { LeftSidebar } from './components/LeftComponent';
-import { JacketCanvas } from './components/MiddleComponent';
-import { CustomizationPanel } from './components/RightComponent';
+import './App.css'; 
+import { LeftComponent } from './components/LeftComponent';
+import { MiddleComponent } from './components/MiddleComponent';
+import { RightComponent } from './components/RightComponent';
 
 const App: React.FC = () => {
   return (
     <div>
       <header>
-        <h1>Interactive Jacket Customizer</h1>
+        <h1>Interactive Jacket Customizer - text in app.tsx</h1>
       </header>
       <main>
         <div style={{ display: 'flex' }}>
-          <div><LeftSidebar /></div>
-          <div><JacketCanvas /></div>
-          <div><CustomizationPanel /></div>
+          <div><LeftComponent /></div>
+          <div><MiddleComponent /></div>
+          <div><RightComponent /></div>
         </div>
       </main>
       <footer>
